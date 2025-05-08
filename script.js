@@ -37,3 +37,18 @@ console.log(s);
 
 let divNome = document.getElementById("nome");
 divNome.innerHTML = "Andrea";
+
+let h1 = document.createElement("h1");
+h1.innerHTML="Ciao!";
+divNome.appendChild(h1);
+
+/* Crea un input, un bottone e quando clicco
+ il bottone inserisco nella pagina quello che c'è nell'input */
+function clickBottone(){
+    let listaUl = document.getElementById("lista");
+    let valoreNome = document.getElementById("nomeInput").value;
+    let li = document.createElement("li");
+    li.innerHTML=valoreNome;
+    listaUl.appendChild(li);
+}
+
